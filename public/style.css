@@ -1,0 +1,13 @@
+.block {
+  display: inline-block;
+}
+
+.active, .active:focus {
+  color: red;
+  text-decoration: none;
+}
+
+.active:hover {
+  color: darkred;
+  text-decoration: underline;
+}
