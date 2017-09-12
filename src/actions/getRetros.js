@@ -29,7 +29,7 @@ let headers = new Headers({
 
 let getRetros = () => dispatch => {
   dispatch(getRetrosRequest())
-  fetch(`http://localhost:3001/api/v1/retros`, {
+  fetch(`http://retro-notes-api.herokuapp.com/api/v1/retros`, {
     headers: headers
   })
   .then((response) => response.json())

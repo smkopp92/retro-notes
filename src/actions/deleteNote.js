@@ -29,7 +29,7 @@ let headers = new Headers({
 
 let deleteNote = (noteId) => dispatch => {
   dispatch(deleteNoteRequest())
-  fetch(`http://localhost:3001/api/v1/notes/${noteId}`, {
+  fetch(`http://retro-notes-api.herokuapp.com/api/v1/notes/${noteId}`, {
     headers: headers,
     method: "DELETE"
   })

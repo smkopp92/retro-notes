@@ -5,7 +5,7 @@ let headers = new Headers({
 })
 
 let postNotesToSlack = (retro) => dispatch => {
-  fetch(`http://localhost:3001/api/v1/retros/${retro}/slack`, {
+  fetch(`http://retro-notes-api.herokuapp.com/api/v1/retros/${retro}/slack`, {
     headers: headers
   })
 };
