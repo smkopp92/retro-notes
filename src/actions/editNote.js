@@ -30,7 +30,7 @@ let headers = new Headers({
 
 let editNote = (newNote) => dispatch => {
   dispatch(editNoteRequest())
-  fetch(`https://retro-notes-api.herokuapp.com/api/v1/notes/${newNote.id}`, {
+  fetch(`https://la-retro-notes-api.herokuapp.com/api/v1/notes/${newNote.id}`, {
     headers: headers,
     method: "PATCH",
     body: JSON.stringify(newNote)

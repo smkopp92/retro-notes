@@ -29,7 +29,7 @@ let headers = new Headers({
 
 let addNote = (newNote, retro) => dispatch => {
   dispatch(addNoteRequest())
-  fetch(`https://retro-notes-api.herokuapp.com/api/v1/retros/${retro}/notes`, {
+  fetch(`https://la-retro-notes-api.herokuapp.com/api/v1/retros/${retro}/notes`, {
     headers: headers,
     method: "POST",
     body: JSON.stringify(newNote)
