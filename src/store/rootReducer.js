@@ -8,6 +8,7 @@ import notes from '../reducers/notes';
 import retros from '../reducers/retros';
 import selectedNote from '../reducers/selectedNote';
 import currentRetro from '../reducers/currentRetro';
+import currentUser from '../reducers/currentUser';
 
 let rootReducer = combineReducers({
   form: formReducer.plugin({
@@ -32,6 +33,7 @@ let rootReducer = combineReducers({
   retros,
   currentRetro,
   selectedNote,
+  currentUser,
   routing
 });
 
